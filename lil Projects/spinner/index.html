@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Spinner</title>
+  <link rel="stylesheet" href="./spinner.css">
+</head>
+<body>
+  <div class="main">
+    <h1>YAHOO Welcome</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quaerat perferendis cum omnis, nam odio doloremque cumque porro repudiandae fugit non voluptatum nihil doloribus iure obcaecati aut culpa excepturi expedita perspiciatis aliquam vel voluptatem, repellat nemo. Consectetur, modi repudiandae. Accusantium voluptatibus in officiis assumenda excepturi facilis sed nihil voluptate temporibus?</p>
+  </div>
+  
+  <script>
+    document.querySelector('.main p').style.display = 'none';
+    document.querySelector ('.main').classList.add('spinner-1');
+
+    // Mimic server request
+    setTimeout(() => {
+     document.querySelector ('.main').classList.remove('spinner-1'); document.querySelector('.main p').style.display = 'block';
+    
+    }, 4000);
+   </script>
+
+</body>
+</html>
